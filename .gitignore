@@ -6,6 +6,6 @@ obj/*
 bin/*
 obj
 bin
-HotelAppDB.publish.xml
+**/HotelAppDB.publish.xml
 
 
