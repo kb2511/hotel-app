@@ -1,6 +1,0 @@
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\bin\Debug\HotelAppDB.dacpac
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\bin\Debug\HotelAppDB.dll
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\bin\Debug\HotelAppDB.pdb
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\obj\Debug\HotelAppDB.sqlproj.AssemblyReference.cache
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\obj\Debug\HotelAppDB.dll
-C:\Users\katarinab\source\repos\hotel-app\HotelProject\HotelAppDB\obj\Debug\HotelAppDB.pdb
