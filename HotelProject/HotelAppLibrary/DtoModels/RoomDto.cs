@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelAppLibrary.Models
+namespace HotelAppLibrary.DtoModels
 {
-    public class GuestModel
+    public class RoomDto
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string RoomNumber { get; set; }
+        public int RoomTypeId { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HotelAppLibrary.Models
+namespace HotelAppLibrary.DtoModels
 {
-    public class BookingFullModel
+    public class BookingDto
     {
         public int Id { get; set; }
         public int RoomId { get; set; }
