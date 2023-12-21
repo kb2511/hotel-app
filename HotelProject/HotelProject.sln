@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HotelAppDB", "HotelAppDB\Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelAppLibrary", "HotelAppLibrary\HotelAppLibrary.csproj", "{B39F1603-BB59-41EE-BB0A-D825C0B86939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelAppWeb", "HotelAppWeb\HotelAppWeb.csproj", "{C9D33ECB-00A7-4141-B2F3-29E170BE18F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{B39F1603-BB59-41EE-BB0A-D825C0B86939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B39F1603-BB59-41EE-BB0A-D825C0B86939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B39F1603-BB59-41EE-BB0A-D825C0B86939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D33ECB-00A7-4141-B2F3-29E170BE18F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D33ECB-00A7-4141-B2F3-29E170BE18F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D33ECB-00A7-4141-B2F3-29E170BE18F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D33ECB-00A7-4141-B2F3-29E170BE18F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
