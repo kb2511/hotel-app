@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HotelAppLibrary.DtoModels;
 
-namespace HotelAppLibrary.Service
+namespace HotelAppLibrary.Services
 {
     public class SqlService : IHotelService
     {
