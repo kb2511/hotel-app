@@ -6,7 +6,7 @@
 <h1>Room Search</h1>
 
 
-<form asp-action="OnPost" method="post">
+<form asp-action="SearchRoom" method="post">
     <div class="form-group">
         <label asp-for="StartDate">
             Datum od:
@@ -43,7 +43,12 @@
                     </td>
                     <td>@string.Format("{0:C}", room.Price)</td>
                     <td>
-                        <a >Book Now</a>
+                        <a asp-controller="BookRoom" asp-action="Index" 
+                           asp-route-roomId="@room.Id"
+                           asp-route-startdate="@Model.StartDate.ToString("yyyy-MM-dd")"
+                           asp-route-enddate="@Model.EndDate.ToString("yyyy-MM-dd")">
+                         Book Now
+                        </a>
                     </td>
                 </tr>
             }
