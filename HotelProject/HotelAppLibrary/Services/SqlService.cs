@@ -36,7 +36,7 @@ namespace HotelAppLibrary.Services
                                                     .Select(b => b.RoomId).ToList();
 
             Room availableRoom = _context.Rooms.Where(r =>
-                                                            r.Id == roomTypeId &&
+                                                            r.RoomTypeId == roomTypeId &&
                                                             !bookedRoomsId.Contains(r.Id)
                                                         ).First();
 
@@ -68,7 +68,7 @@ namespace HotelAppLibrary.Services
                                                         (endDate >= b.StartDate && endDate < b.EndDate))
                                                 .Select(b => b.RoomId).ToList();
 
-            var availableRooms = _context.Rooms.Where(r => !bookedRoomsId.Contains(r.RoomTypeId))
+            var availableRooms = _context.Rooms.Where(r => !bookedRoomsId.Contains(r.Id))
                                                             .GroupBy(r => r.RoomTypeId,
                                                             (rId, rooms) => new RoomTypeDto()
                                                             {
