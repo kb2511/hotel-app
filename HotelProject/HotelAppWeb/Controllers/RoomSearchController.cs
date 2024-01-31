@@ -34,6 +34,7 @@ namespace HotelAppWeb.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
             
@@ -54,6 +55,7 @@ namespace HotelAppWeb.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
         }

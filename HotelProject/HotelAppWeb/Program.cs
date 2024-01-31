@@ -1,11 +1,21 @@
 global using HotelAppLibrary.HotelContext;
 global using HotelAppLibrary.Services;
 global using Microsoft.EntityFrameworkCore;
+using HotelAppWeb.Logger;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+string logPath = builder.Configuration.GetValue<string>("LogFilePath");
+
+builder.Services.AddLogging(configure =>
+{
+    configure.ClearProviders();
+    configure.AddProvider(new HotelDailyLoggerProvider(logPath));
+});
 
 string databaseType = builder.Configuration.GetValue<string>("DatabaseType").ToLower();
 

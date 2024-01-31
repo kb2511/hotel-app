@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using HotelAppLibrary.DtoModels;
 
 namespace HotelAppLibrary.Services
@@ -15,7 +14,7 @@ namespace HotelAppLibrary.Services
 
         public SqlService(HotelAppDBContext context)
         {
-            _context = context;           
+            _context = context; 
         }
         public void BookGuest(string firstName, string lastName, DateTime startDate, DateTime endDate, int roomTypeId)
         {
